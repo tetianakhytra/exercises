@@ -1,5 +1,7 @@
-function momsberegner (belobet, moms=25)
-console.log (belobet+(belobet*25/100));
+"use strict"
+function momsBeregner (belobet, moms=25)
+{
+return (belobet+(belobet*moms/100))}
 
-let result = beregnet (100,25)
-console.log(result)
+let result = momsBeregner (200);
+console.log(result); 
