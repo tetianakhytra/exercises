@@ -1,4 +1,5 @@
-import { getRandomNum } from "./utilis/utilis.js"; 
+"use strict"
+import { getRandomNum } from "../utilis/utilis.js"
 
 const number = getRandomNum(101);
 
