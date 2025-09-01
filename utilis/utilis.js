@@ -1,29 +1,24 @@
-export function getRandomNum(max) {
-  return Math.floor(Math.random() * max);
-}
+// --- Game state ---
+export const game = {
+  low: 1,
+  high: 100,
+  attempts: 0,
+  guess: null
+};
 
-
-// --- Guessing game logic ---
-export let low = 1;
-export let high = 100;
-export let attempts = 0;
-export let guess;
-
+// Make a guess
 export function makeGuess() {
-  guess = Math.floor((low + high) / 2);
-  attempts++;
-  return guess;
+  game.guess = Math.floor((game.low + game.high) / 2);
+  game.attempts++;
+  return game.guess;
 }
 
+// Reset the game
 export function resetGame() {
-  low = 1;
-  high = 100;
-  attempts = 0;
-}
-
-// Random number generator
-export function getRandomNum(max) {
-  return Math.floor(Math.random() * max);
+  game.low = 1;
+  game.high = 100;
+  game.attempts = 0;
+  game.guess = null;
 }
 
 // Update text and color of an element
