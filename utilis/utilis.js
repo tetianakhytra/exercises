@@ -6,6 +6,7 @@ export const game = {
   guess: null
 };
 
+
 // Make a guess
 export function makeGuess() {
   game.guess = Math.floor((game.low + game.high) / 2);
