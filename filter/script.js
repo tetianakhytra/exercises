@@ -25,7 +25,7 @@ showTheseVehicles(vehicles);
       tbodyPointer.innerHTML = "";
       arr.forEach((each) => {
         tbodyPointer.innerHTML += `<tr>
-          <td>${each.type ?? ""}</td>. 
+          <td>${each.type ?? ""}</td>
           <td>${each.fuel ?? ""}</td>
           <td>${each.passengers ?? ""}</td>
           <td>${each.stops ? each.stops.join(", ") : ""}</td>
