@@ -1,0 +1,39 @@
+/* Light theme */
+body[data-theme="light"] {
+  --header-bg-col: #d2d2d2; /* Custom property til header */
+   --footer-bg-col: #d1edf4;
+  background-color: #fff;
+  --h1-col: #3f3e3e;
+}
+
+/* Dark theme */
+body[data-theme="dark"] {
+  --header-bg-col: #090808; 
+    --footer-bg-col: rgb(62, 62, 61);
+  background-color: #333;
+  --h1-col: #fff;
+}
+
+/* Hawaii theme */
+body[data-theme="hawaii"] {
+  --header-bg-col: linear-gradient(90deg, #ff9a9e, #fad0c4, #fbc2eb); 
+  --footer-bg-col: rgb(239, 226, 153);
+  --h1-col: #e51919;
+  background-color: #fffae6;
+}
+
+/* Her bruger vi variablen */
+header {
+  background: var(--header-bg-col);
+  padding: 1rem;
+  text-align: center;
+}
+
+footer{
+    background-color: var(--footer-bg-col);
+    margin-top: 5rem;
+}
+
+h1{
+    color: var(--h1-col);
+}
