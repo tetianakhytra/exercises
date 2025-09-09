@@ -4,14 +4,16 @@ body[data-theme="light"] {
    --footer-bg-col: #d1edf4;
   background-color: #fff;
   --h1-col: #3f3e3e;
+  --p--col: #041564;;
 }
 
 /* Dark theme */
 body[data-theme="dark"] {
   --header-bg-col: #090808; 
     --footer-bg-col: rgb(62, 62, 61);
-  background-color: #333;
+  background-color: #656565;
   --h1-col: #fff;
+  --p--col: #fff;
 }
 
 /* Hawaii theme */
@@ -19,6 +21,7 @@ body[data-theme="hawaii"] {
   --header-bg-col: linear-gradient(90deg, #ff9a9e, #fad0c4, #fbc2eb); 
   --footer-bg-col: rgb(239, 226, 153);
   --h1-col: #e51919;
+  --p--col: #5d0331;
   background-color: #fffae6;
 }
 
@@ -31,9 +34,27 @@ header {
 
 footer{
     background-color: var(--footer-bg-col);
-    margin-top: 5rem;
+    padding: 1rem;
+    text-align: center;
 }
 
 h1{
     color: var(--h1-col);
+    font-size: 3rem;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    font-family: "Montseratt", sans-serif;
+    line-height: 1.4;
+    font-size: 1rem;
+}
+
+p{
+    margin: 40px;
+    color: var(--p--col);
 }
