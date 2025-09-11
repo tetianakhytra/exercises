@@ -1,0 +1,27 @@
+    :root{
+      --h: 210;   /* Hue 
+      --s: 50;    /* Saturation % (opdateres af JS ud fra Y) */
+      --l: 50;    /* Lightness % (opdateres af JS ud fra X) */
+    }
+
+    html,body{
+      height:100%;
+      margin:0;
+    }
+
+    /* Brug CSS-variablerne i baggrunden *  hsl(hue, saturation, lightness)*/
+    body{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background: linear-gradient(180deg,
+        hsl(var(--h), calc(var(--s) * 1%), calc(var(--l) * 1%)),
+        hsl(calc(var(--h) + 30), calc(var(--s) * 1%), calc(var(--l) * 0.6%))
+      );
+      transition: background 120ms linear; /* blød overgang for glidende opdatering */
+      color: #fff;
+      text-align:center;
+    }
+
+  
+   
