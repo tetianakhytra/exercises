@@ -1,4 +1,4 @@
-    async function fetchQueue() {
+  async function fetchQueue() {
       try {
         const response = await fetch('https://kea-alt-del.dk/kata-distortion/');
         const data = await response.json();
@@ -17,6 +17,6 @@
       }
     }
 
-    // Kør straks og derefter hvert 10. sekund
+    // Kør straks og derefter hvert 7 sekund
     fetchQueue();
-    setInterval(fetchQueue, 10000);
+    setInterval(fetchQueue,7000);

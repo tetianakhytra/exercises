@@ -30,14 +30,3 @@
     100% { transform: scale(1) rotate(0deg); color: #007BFF; }
   }
 
-  .confetti {
-    position: absolute;
-    font-size: 24px;
-    pointer-events: none;
-    animation: fly 1s ease-out forwards;
-  }
-
-  @keyframes fly {
-    0% { opacity: 1; transform: translate(0,0) rotate(0deg); }
-    100% { opacity: 0; transform: translate(var(--x, 50px), var(--y, -150px)) rotate(720deg); }
-  }
