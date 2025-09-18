@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My ToDo App</title>
+</head>
+<body>
+  <section>
+    <h1>To do list</h1>
+
+    <input type="text" id="todo_name_input" placeholder="Task description">
+
+    <input type="number" id="todo_quantity_input" placeholder="Quantity (optional)" min="1">
+
+    <button id="submit">Add Task</button>
+
+    <h2>To Do:</h2>
+    <ul id="todo_container"></ul>
+
+    <h2>Done:</h2>
+    <ul id="done_container"></ul>
+  </section>
+
+  <script type="module" src="js.js"></script>
+</body>
+</html>
